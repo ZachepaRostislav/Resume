@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 5px;
+}
+.header h1 {
+  font-size: 36px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.photo img {
+  width: 300px;
+  height: 400px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.list-title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(67, 67, 179);
+}
+
+.personal_info ul:not(:first-child) {
+  margin-top: 15px;
+}
+
+.personal_info_list .user::before {
+  content: url("./img/user-solid.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.personal_info_list .connect::before {
+  content: url("./img/phone-square-alt-solid.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.personal_info_list .email::before {
+  content: url("./img/at-solid.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_skills .html::before {
+  content: url("./img/html5-brands.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.personal_info_skills .html::after {
+  content: url("./img/star-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.personal_info_skills .css::before {
+  content: url("./img/css3-alt-brands.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_skills .css::after {
+  content: url("./img/star-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.personal_info_skills .scss::before {
+  content: url("./img/sass-brands.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_skills .scss::after {
+  content: url("./img/star-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.personal_info_skills .git::before {
+  content: url("./img/github-brands.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.personal_info_skills .git::after {
+  content: url("./img/star-half-alt-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.personal_info_skills .js::before {
+  content: url("./img/js-brands.svg");
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_skills .js::after {
+  content: url("./img/star-half-alt-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.personal_info_experience .react::before {
+  content: url("./img/react-brands.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_experience .todo::before {
+  content: url("./img/list-alt-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_language .language::before {
+  content: url("./img/language-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_git .git-link::before {
+  content: url("./img/git-brands.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_career .develop::before {
+  content: url("./img/check-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.personal_info_interests .travels::before {
+  content: url("./img/plane-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+.personal_info_interests .sports::before {
+  content: url("./img/dumbbell-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+.personal_info_interests .cars::before {
+  content: url("./img/car-solid.svg");
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+@media (max-width: 320px) {
+  * {
+    text-align: center;
+  }
+
+  .personal_info {
+    order: 2;
+  }
+  .photo {
+    order: 1;
+  }
+}
